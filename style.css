@@ -1,0 +1,141 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: /*#24252a*/#ffffff;
+  font-family: 'inter', sans-serif;
+}
+
+/* Nav */
+.navbar li, a, button{
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  vertical-align: middle;
+  padding: 10% 5%;
+  background: #ffffff;
+  /*
+  border-bottom: 1px solid #009489;
+  */
+  box-shadow: 0px 0px 20px 5px rgba(0, 148, 137, 0.15);
+}
+
+nav{
+  align-items: center;
+  vertical-align: middle;
+}
+
+.navLogo{
+  margin-right: auto;
+}
+
+.navLinks{
+  list-style: none;
+  vertical-align: middle;
+  margin: auto;
+  padding: inherit;
+  background: #ffffff;
+}
+
+.navLinks li{
+  display: inline-block;
+  padding: 0px 10px;
+  background: #ffffff;
+}
+
+.navLinks a{
+  font-weight: 500;
+  background: #ffffff;
+  color: #009489;
+  text-decoration: none;
+  
+}
+
+.navLinks a:hover{
+  color: #009489;
+  opacity: 0.8;
+}
+
+.navLinks button{
+  background: #25D366;
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navLinks button:hover{
+  opacity: 0.8;
+}
+/* Nav end */
+
+/*landing page*/
+.landingPage{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(images/BackgroundImage2.png);
+  color: white;
+  padding: 2% 3%;
+}
+
+.landingPage h1{
+  font-family: serif;
+  font-size: 145px;
+  background: none;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.landingPage p{
+  background: none;
+  padding-top: 0px;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.lpLinks{
+  background: none;
+  margin-top: 70px;;
+  padding: 0px;
+  list-style: none;
+}
+
+.lpLinks li{
+  display: inline-block;
+  padding: 0px 10px;
+  background: none;
+}
+
+.lpLinks button{
+  background: #25D366;
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.lpLinks button:hover{
+  opacity: 0.8;
+}
+
+.lpLinks a{
+  background: none;
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.lpLinks a:hover{
+  color: #ffffff;
+  opacity: 0.8;
+}
