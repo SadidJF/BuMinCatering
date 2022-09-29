@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #c4c4c4;
+  background-color: #ffffff;
 }
 
 /* Navigation Bar*/
@@ -24,21 +24,52 @@
   justify-content: space-between;
   padding: 10px 70px;
   position: fixed;
-  height: 60px;
+  
   left: 0%;
   right: 0%;
   top: 0px;
-  background: #FFFFFF;
+  background-color: #ffffff;
   align-items: center;
   box-shadow: 0px 0px 20px 5px rgba(0, 148, 137, 0.15);
 }
 
-.navbar li{
-
+.navbar li, a{
   display: inline-block;
+  text-decoration: none;
+  color: #1E2F97;
 }
 
-a{
-  text-decoration-color: #ffffff:
+.hamburgerbar-Line{
+  width: 20px;
+  height: 3px;
+  background-color: #1E2F97;
+  margin-bottom: 4px;
+}
+
+@media all and (max-width: 480px){
+  .navbar{
+    flex-direction: column;
+    padding: 15px;
+  }
+  .navbar li{
+    display: block;
+    padding-bottom: 10px;
+  }
+  .hamburgerbar{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 23px;
+  }
+  .idkwhattonameithonestly{
+    width: 100%;
+    border-bottom: 1px solid #1E2F97;
+  }
+  .navList{
+    margin-top: 20px;
+  }
+  .active{
+    display: block;
+  }
 }
 /* Navigation Bar END*/

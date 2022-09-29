@@ -3,17 +3,24 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const naviList = document.getElementById('navi-list');
+      
+      toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+      })
+    </script>
     <title>Bu Min Catering</title>
   </head>
   <body>
     <nav class="navbar">
-      <div>
+      <div class="idkwhattonameithonestly">
         <a href="index.html">
           <img class="navLogo" src="images/logo.png" alt="Bu Min Catering Logo" height="40px" width="90px">
         </a>
       </div>
-      <ul class="navList">
+      <ul class="navList" id="navi-list">
         <li class="navList-Item">
           <a href="#">Home</a>
         </li>
@@ -27,6 +34,11 @@
           <a href="#">Order Sekarang</a>
         </li>
       </ul>
+      <div class="hamburgerbar" id="toggle-button">
+        <div class="hamburgerbar-Line"></div>
+        <div class="hamburgerbar-Line"></div>
+        <div class="hamburgerbar-Line"></div>
+      </div>
     </nav>
     <div class="landingPage">
       <head>
