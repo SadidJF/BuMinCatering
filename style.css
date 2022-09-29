@@ -24,6 +24,7 @@
   justify-content: space-between;
   padding: 10px 70px;
   position: fixed;
+  width: auto;
   
   left: 0%;
   right: 0%;
@@ -46,14 +47,18 @@
   margin-bottom: 4px;
 }
 
-@media all and (max-width: 480px){
+.hamburgerbar{
+  display: none;
+}
+
+@media all and (max-width: 600px){
   .navbar{
     flex-direction: column;
     padding: 15px;
   }
   .navbar li{
     display: block;
-    padding-bottom: 10px;
+    padding-top: 10px;
   }
   .hamburgerbar{
     display: block;
@@ -63,10 +68,12 @@
   }
   .idkwhattonameithonestly{
     width: 100%;
-    border-bottom: 1px solid #1E2F97;
   }
   .navList{
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+    border-top: 1px solid #1E2F97;
   }
   .active{
     display: block;

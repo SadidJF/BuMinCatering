@@ -3,14 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script>
-      const toggleButton = document.getElementById('toggle-button');
-      const naviList = document.getElementById('navi-list');
-      
-      toggleButton.addEventListener('click', () => {
-        naviList.classList.toggle('active');
-      })
-    </script>
     <title>Bu Min Catering</title>
   </head>
   <body>
@@ -21,7 +13,7 @@
         </a>
       </div>
       <ul class="navList" id="navi-list">
-        <li class="navList-Item">
+        <li class="navList-Item" id="navList-Item-Top">
           <a href="#">Home</a>
         </li>
         <li class="navList-Item">
@@ -40,16 +32,14 @@
         <div class="hamburgerbar-Line"></div>
       </div>
     </nav>
-    <div class="landingPage">
-      <head>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        BU MIN CATERING
-      </head>
-    </div>
+
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const naviList = document.getElementById('navi-list');
+      
+      toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+      })
+    </script>
   </body>
 </html>
